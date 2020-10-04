@@ -1,0 +1,23 @@
+#hex(16) -> '0x10'
+#int('0x10', 18) -> 16
+#s = '%x.' % 0x10  -> '10'
+
+#[[0x10, 0x20,0x30],[0x40, 0x50,0x60]]
+#to
+#'{{0x10, 0x20, 0x30}, {0x40, 0x50,0x60}}'
+
+
+def hex_to_string(hexs):
+    r = '{'
+    for l in hexs:
+        t = [hex(x) for x in l]
+        r = r + '{' + ','.join(t) + '},'
+    r = r.strip(',') + '}'
+    return r
+
+
+'''
+hexs = [[0x10, 0x20,0x30],[0x40, 0x50,0x60]]
+hex_to_string(hexs)
+'''
+

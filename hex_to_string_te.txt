@@ -1,0 +1,1 @@
+writecom(0x10)

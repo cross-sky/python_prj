@@ -1,3 +1,7 @@
 .idea
 /*.csv
 /*.docx
+/manhua/result
+__pycache__
+/manhua_js
+/test_data
